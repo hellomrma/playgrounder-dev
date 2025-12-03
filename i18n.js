@@ -10,7 +10,7 @@ const translations = {
         'project-3d-desc': 'Explore and interact with 3D models in the browser',
         'project-iui-desc': 'Interactive UI experiment with hand gesture recognition',
         'project-fe-desc': 'Frontend development learning paths and roadmaps',
-        'copyright': '© 2025 마광습 (GwangSeub Ma). All rights reserved.'
+        'copyright': '© 2025 hellomrma. All rights reserved.'
     },
     ko: {
         'about': '소개',
@@ -21,7 +21,7 @@ const translations = {
         'project-3d-desc': '브라우저에서 3D 모델을 탐색하고 상호작용하기',
         'project-iui-desc': '손 제스처 인식을 활용한 인터랙티브 UI 실험',
         'project-fe-desc': '프론트엔드 개발 학습 경로와 로드맵',
-        'copyright': '© 2025 마광습 (GwangSeub Ma). All rights reserved.'
+        'copyright': '© 2025 hellomrma. All rights reserved.'
     }
 };
 
