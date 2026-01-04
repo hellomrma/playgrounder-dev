@@ -7,11 +7,14 @@ const translations = {
         'description': 'A project where I experiment with various ideas and turn them into web services.<br>I explore new technologies and create creative solutions.',
         'projects-title': 'Playground items',
         'category-educational': 'Educational',
+        'category-information': 'Information',
+        'category-poc': 'PoC',
         'category-interactive': 'Interactive',
         'project-csharp-desc': 'Interactive C# programming tutorials and examples',
         'project-3d-desc': 'Explore and interact with 3D models in the browser',
         'project-iui-desc': 'Interactive UI experiment with hand gesture recognition',
         'project-fe-desc': 'Frontend development learning paths and roadmaps',
+        'project-k-holidays-desc': 'View and check Korean public holidays calendar',
         'copyright': '© 2025 <a href="mailto:hellomrma@gmail.com" class="footer-email">hellomrma</a>. All rights reserved.'
     },
     ko: {
@@ -20,11 +23,14 @@ const translations = {
         'description': '다양한 아이디어를 실험하고 웹 서비스로 만들어보는 프로젝트입니다.<br>새로운 기술을 탐구하고 창의적인 솔루션을 만들어갑니다.',
         'projects-title': '플레이그라운드 아이템',
         'category-educational': '교육',
+        'category-information': '정보',
+        'category-poc': 'PoC',
         'category-interactive': '인터랙티브',
         'project-csharp-desc': '인터랙티브한 C# 프로그래밍 튜토리얼과 예제',
         'project-3d-desc': '브라우저에서 3D 모델을 탐색하고 상호작용하기',
         'project-iui-desc': '손 제스처 인식을 활용한 인터랙티브 UI 실험',
         'project-fe-desc': '프론트엔드 개발 학습 경로와 로드맵',
+        'project-k-holidays-desc': '한국 공휴일 캘린더 확인하기',
         'copyright': '© 2025 <a href="mailto:hellomrma@gmail.com" class="footer-email">hellomrma</a>. All rights reserved.'
     }
 };
