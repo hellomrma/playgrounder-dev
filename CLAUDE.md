@@ -27,7 +27,6 @@
 - **Information**: K Holidays
 - **PoC**: 3D Models
 - **Interactive**: IUI Put Your Hands Up
-- **Utility**: Issue Automaker
 
 ### 서브 프로젝트 URL
 - https://csharp-tutorials.playgrounder.dev
@@ -35,7 +34,6 @@
 - https://k-holidays.playgrounder.dev
 - https://3d-models.playgrounder.dev
 - https://iui-putyourhandsup.playgrounder.dev
-- https://issue-automaker.playgrounder.dev
 
 ---
 

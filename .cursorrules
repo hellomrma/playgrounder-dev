@@ -1,0 +1,93 @@
+# playgrounder.dev - Cursor AI 규칙
+
+## 프로젝트 개요
+- **playgrounder.dev**: 개인 포트폴리오 랜딩 페이지 (다양한 웹 서비스 프로젝트 소개)
+- **기술 스택**: 순수 HTML/CSS/JavaScript (빌드 도구 없음)
+- **다국어**: 영어/한국어 (i18n.js, data-i18n)
+
+---
+
+## 핵심 원칙
+1. **단순함**: npm, webpack, vite, React, Vue 등 **절대 사용 금지**
+2. **다국어**: 텍스트 추가/수정 시 **영어와 한국어 모두** i18n.js에 반영
+3. **접근성**: `aria-label`, `role`, 시맨틱 태그 사용
+4. **SEO**: 새 프로젝트 추가 시 `index.html`의 JSON-LD `itemListElement`에 반드시 추가
+
+---
+
+## 코드 스타일
+
+### HTML
+- 시맨틱 태그: `<main>`, `<section>`, `<nav>`, `<footer>`
+- 번역: `data-i18n="key-name"` 지정, 하드코딩 금지
+
+### CSS
+- 색상: hex (`#000000`, `#1a1a1a`, `#333333`, `#555555`, `#ffffff`, `#cccccc`)
+- 브레이크포인트: `768px`
+- 클래스: kebab-case (`project-card`, `category-title`)
+- 트랜지션: `0.2s` 기본
+- **인라인 스타일 금지**, **`!important` 남용 금지**
+
+### JavaScript
+- IIFE로 전역 오염 방지
+- `const`/`let`만 사용 (`var` 금지)
+- 상수: UPPER_SNAKE_CASE, 함수/변수: camelCase
+- JSDoc 스타일 주석
+
+### 들여쓰기
+- 4스페이스 (HTML/CSS/JS 공통)
+
+---
+
+## 파일별 책임
+| 파일 | 역할 |
+|------|------|
+| index.html | 구조, SEO 메타/JSON-LD, 콘텐츠 |
+| style.css | 전체 스타일 |
+| script.js | Canvas 파티클 배경 애니메이션만 |
+| i18n.js | 번역 데이터 + 언어 전환 로직 |
+
+---
+
+## 새 프로젝트 추가 시 체크리스트
+1. `index.html` - 카테고리 섹션에 프로젝트 카드 추가 (aria-label, data-i18n)
+2. `index.html` - JSON-LD `itemListElement`에 SoftwareApplication 항목 추가
+3. `i18n.js` - `en`, `ko` 둘 다 번역 키 추가
+4. `CLAUDE.md` - 서브 프로젝트 URL 추가 (필요 시)
+
+---
+
+## 금지 사항
+- ❌ 빌드 도구, 프레임워크, 외부 CDN 라이브러리
+- ❌ 인라인 스타일, `!important` 남용, `var`
+- ❌ 영어만 추가하고 한국어 누락
+- ❌ JSON-LD 업데이트 누락
+- ❌ `body { overflow: hidden }` (스크롤 막힘)
+
+---
+
+## 패턴 참고
+
+### 프로젝트 카드 (HTML)
+```html
+<a href="https://[project].playgrounder.dev/" class="project-card" target="_blank" rel="noopener noreferrer" aria-label="[Name] project">
+    <h4 class="project-name">[Name]</h4>
+    <p class="project-description" data-i18n="project-[key]-desc">[EN 설명]</p>
+</a>
+```
+
+### JSON-LD 항목
+```json
+{ "@type": "SoftwareApplication", "name": "[Name]", "url": "https://[project].playgrounder.dev", "description": "[Description]", "applicationCategory": "[Category]Application", "operatingSystem": "Web Browser" }
+```
+
+### i18n 키
+- 프로젝트 설명: `project-[key]-desc`
+- 카테고리: `category-[name]`
+
+---
+
+## 응답 방식
+- 코드 수정 시: 연관 파일 모두 함께 수정 (예: 프로젝트 추가 → index.html + i18n.js)
+- 기존 패턴과 스타일 일관성 유지
+- 문제 발견 시 해결책 함께 제안

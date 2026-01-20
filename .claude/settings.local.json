@@ -1,7 +1,5 @@
 {
   "permissions": {
-    "allow": [
-      "WebFetch(domain:issue-automaker.playgrounder.dev)"
-    ]
+    "allow": []
   }
 }
