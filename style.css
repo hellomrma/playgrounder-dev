@@ -14,7 +14,7 @@ body {
     color: #ffffff;
     padding: 20px;
     position: relative;
-    overflow: hidden;
+    overflow-x: hidden;
 }
 
 #canvas-background {
