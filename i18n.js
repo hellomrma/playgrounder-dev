@@ -15,6 +15,7 @@ const translations = {
         'project-iui-desc': 'Interactive UI experiment with hand gesture recognition',
         'project-fe-desc': 'Frontend development learning paths and roadmaps',
         'project-k-holidays-desc': 'View and check Korean public holidays calendar',
+        'project-ai-article-desc': 'Weekly AI news and article digest',
         'copyright': '© 2025 <a href="mailto:hellomrma@gmail.com" class="footer-email">hellomrma</a>. All rights reserved.'
     },
     ko: {
@@ -31,6 +32,7 @@ const translations = {
         'project-iui-desc': '손 제스처 인식을 활용한 인터랙티브 UI 실험',
         'project-fe-desc': '프론트엔드 개발 학습 경로와 로드맵',
         'project-k-holidays-desc': '한국 공휴일 캘린더 확인하기',
+        'project-ai-article-desc': '한 주치 AI 소식·아티클 요약',
         'copyright': '© 2025 <a href="mailto:hellomrma@gmail.com" class="footer-email">hellomrma</a>. All rights reserved.'
     }
 };

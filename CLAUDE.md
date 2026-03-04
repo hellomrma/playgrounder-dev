@@ -32,6 +32,7 @@
 - https://csharp-tutorials.playgrounder.dev
 - https://fe-roadmaps.playgrounder.dev
 - https://k-holidays.playgrounder.dev
+- https://ai-article.playgrounder.dev
 - https://3d-models.playgrounder.dev
 - https://iui-putyourhandsup.playgrounder.dev
 
