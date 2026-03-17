@@ -24,9 +24,9 @@
 
 ### 프로젝트 카테고리
 - **Educational**: C# Tutorials, FE Roadmaps
-- **Information**: K Holidays
+- **Information**: K Holidays, Weekly AI Article, 판교Pick
 - **PoC**: 3D Models
-- **Interactive**: IUI Put Your Hands Up
+- **Interactive**: IUI Put Your Hands Up, Snap Rush
 
 ### 서브 프로젝트 URL
 - https://csharp-tutorials.playgrounder.dev
@@ -35,6 +35,8 @@
 - https://ai-article.playgrounder.dev
 - https://3d-models.playgrounder.dev
 - https://iui-putyourhandsup.playgrounder.dev
+- https://pangyo-pick.playgrounder.dev
+- https://snap-rush.playgrounder.dev
 
 ---
 

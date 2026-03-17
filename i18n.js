@@ -16,6 +16,8 @@ const translations = {
         'project-fe-desc': 'Frontend development learning paths and roadmaps',
         'project-k-holidays-desc': 'View and check Korean public holidays calendar',
         'project-ai-article-desc': 'Weekly AI news and article digest',
+        'project-pangyo-pick-desc': 'Roulette-based lunch and dinner spot recommendations near Pangyo Techno Valley',
+        'project-snap-rush-desc': 'Fast-paced reflex game — catch targets and compete on the leaderboard',
         'copyright': '© 2025 <a href="mailto:hellomrma@gmail.com" class="footer-email">hellomrma</a>. All rights reserved.'
     },
     ko: {
@@ -33,6 +35,8 @@ const translations = {
         'project-fe-desc': '프론트엔드 개발 학습 경로와 로드맵',
         'project-k-holidays-desc': '한국 공휴일 캘린더 확인하기',
         'project-ai-article-desc': '한 주치 AI 소식·아티클 요약',
+        'project-pangyo-pick-desc': '판교테크노밸리 주변 점심·회식 장소를 룰렛으로 추천하는 서비스',
+        'project-snap-rush-desc': '40초 안에 타깃을 잡아 리더보드에 도전하는 반응속도 게임',
         'copyright': '© 2025 <a href="mailto:hellomrma@gmail.com" class="footer-email">hellomrma</a>. All rights reserved.'
     }
 };
