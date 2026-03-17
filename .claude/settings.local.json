@@ -1,5 +1,11 @@
 {
   "permissions": {
-    "allow": []
+    "allow": [
+      "WebFetch(domain:pangyo-pick.playgrounder.dev)",
+      "WebFetch(domain:snap-rush.playgrounder.dev)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)"
+    ]
   }
 }
