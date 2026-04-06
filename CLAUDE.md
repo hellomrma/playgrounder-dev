@@ -171,6 +171,51 @@ npx serve
 
 ---
 
+## 하네스: playgrounder.dev 포트폴리오 관리
+
+**목표:** 새 프로젝트 추가 시 index.html, i18n.js, JSON-LD를 빠짐없이 동기화
+
+**에이전트 팀:**
+| 에이전트 | 역할 |
+|---------|------|
+| `content-planner` | 프로젝트 EN/KO 설명, 카테고리, i18n 키, JSON-LD 메타데이터 기획 |
+| `code-implementer` | index.html(카드+JSON-LD), i18n.js(en+ko) 실제 수정 |
+| `qa-validator` | i18n 완전성, JSON-LD 구조, 접근성, 3자 일관성 교차 검증 |
+
+**스킬:**
+| 스킬 | 용도 | 사용 에이전트 |
+|------|------|-------------|
+| `add-project` | 새 프로젝트 추가 오케스트레이터 | content-planner → code-implementer → qa-validator |
+| `site-audit` | 사이트 전체 품질 감사 | qa-validator |
+
+**실행 규칙:**
+- 새 프로젝트 추가 요청 시 `add-project` 스킬을 통해 에이전트 팀으로 처리하라
+- 사이트 점검/감사 요청 시 `site-audit` 스킬을 사용하라
+- 단순 질문/확인은 에이전트 팀 없이 직접 응답해도 무방
+- 모든 에이전트는 `model: "opus"` 사용
+- 중간 산출물: `_workspace/` 디렉토리
+
+**디렉토리 구조:**
+```
+.claude/
+├── agents/
+│   ├── content-planner.md
+│   ├── code-implementer.md
+│   └── qa-validator.md
+└── skills/
+    ├── add-project/
+    │   └── SKILL.md
+    └── site-audit/
+        └── SKILL.md
+```
+
+**변경 이력:**
+| 날짜 | 변경 내용 | 대상 | 사유 |
+|------|----------|------|------|
+| 2026-04-06 | 초기 구성 | 전체 | 프로젝트 추가 워크플로우 자동화 |
+
+---
+
 ## 8. 프로젝트 공통 패턴 및 관례
 
 ### 다국어 처리 패턴

@@ -4,27 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>playgrounder.dev - Turn Ideas into Web Services</title>
-    
+
     <!-- Favicon -->
     <link rel="icon" type="image/svg+xml" href="/favicon.svg">
     <link rel="icon" type="image/png" href="/favicon.png">
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-    
+
     <!-- Theme Color -->
-    <meta name="theme-color" content="#000000">
-    
+    <meta name="theme-color" content="#050508">
+
     <!-- SEO Meta Tags -->
     <meta name="description" content="playgrounder.dev is a project where I experiment with various ideas and turn them into web services. I explore new technologies and create creative solutions.">
     <meta name="keywords" content="web services, web development, projects, ideas, playground, experiments, creative solutions, frontend development, C# tutorials, 3D models, interactive UI, frontend roadmaps, 웹 서비스, 웹 개발, 프로젝트, 프론트엔드 개발">
     <meta name="author" content="hellomrma">
     <meta name="robots" content="index, follow">
     <link rel="canonical" href="https://playgrounder.dev">
-    
+
     <!-- Language Alternates -->
     <link rel="alternate" hreflang="en" href="https://playgrounder.dev">
     <link rel="alternate" hreflang="ko" href="https://playgrounder.dev">
     <link rel="alternate" hreflang="x-default" href="https://playgrounder.dev">
-    
+
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://playgrounder.dev">
@@ -33,22 +33,21 @@
     <meta property="og:site_name" content="playgrounder.dev">
     <meta property="og:locale" content="en_US">
     <meta property="og:locale:alternate" content="ko_KR">
-    
+
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:url" content="https://playgrounder.dev">
     <meta name="twitter:title" content="playgrounder.dev - Turn Ideas into Web Services">
     <meta name="twitter:description" content="I experiment with various ideas and turn them into web services. I explore new technologies and create creative solutions.">
-    
+
     <!-- GEO (Generative Engine Optimization) -->
-    <!-- Optimized for AI search engines like ChatGPT, Perplexity, Google AI Overview, etc. -->
     <meta name="generator" content="playgrounder.dev">
     <meta name="application-name" content="playgrounder.dev">
-    
+
     <!-- Additional context for AI engines -->
     <meta name="subject" content="Web Development Projects, Frontend Development, Interactive Web Services">
     <meta name="topic" content="Web Services, Frontend Development, C# Tutorials, 3D Models, Interactive UI, Frontend Roadmaps">
-    
+
     <!-- Structured Data (JSON-LD) -->
     <script type="application/ld+json">
     {
@@ -172,28 +171,48 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- Aurora background orbs -->
+    <div class="aurora-bg" aria-hidden="true">
+        <div class="orb orb-1"></div>
+        <div class="orb orb-2"></div>
+        <div class="orb orb-3"></div>
+    </div>
+
+    <!-- Canvas particle animation -->
     <canvas id="canvas-background"></canvas>
+
+    <!-- Cursor glow -->
+    <div class="cursor-glow" aria-hidden="true"></div>
+
     <a href="#main-content" class="skip-link">Skip to main content</a>
+
     <nav class="header-nav" aria-label="Main navigation">
         <button id="lang-toggle" class="lang-toggle" aria-label="Toggle language">KO</button>
         <a href="https://resume.playgrounder.dev/" class="resume-link" target="_blank" rel="noopener noreferrer" data-i18n="about">About</a>
     </nav>
+
     <main id="main-content" class="container" role="main">
-        <h1 class="logo">playgrounder.dev</h1>
-        <p class="tagline" data-i18n="tagline">Turn Ideas into Web Services</p>
-        <p class="description" data-i18n="description">
-            A project where I experiment with various ideas and turn them into web services.<br> 
-            I explore new technologies and create creative solutions.
-        </p>
+        <div class="hero">
+            <h1 class="logo">playgrounder.dev</h1>
+            <p class="tagline" data-i18n="tagline">Turn Ideas into Web Services</p>
+            <p class="description" data-i18n="description">
+                A project where I experiment with various ideas and turn them into web services.<br>
+                I explore new technologies and create creative solutions.
+            </p>
+        </div>
 
         <section class="projects-section" aria-labelledby="projects-heading">
             <h2 id="projects-heading" class="projects-title" data-i18n="projects-title">Playground items</h2>
-            
-            <div class="category-group">
+
+            <div class="category-group" data-category="educational">
                 <h3 class="category-title" data-i18n="category-educational">Educational</h3>
                 <ul class="projects-grid">
                     <li>
-                        <a href="https://csharp-tutorials.playgrounder.dev/" class="project-card" target="_blank" rel="noopener noreferrer" aria-label="C# Tutorials project">
+                        <a href="https://csharp-tutorials.playgrounder.dev/"
+                           class="project-card"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           aria-label="C# Tutorials project">
                             <h4 class="project-name">C# Tutorials</h4>
                             <p class="project-description" data-i18n="project-csharp-desc">
                                 Interactive C# programming tutorials and examples
@@ -201,7 +220,11 @@
                         </a>
                     </li>
                     <li>
-                        <a href="https://fe-roadmaps.playgrounder.dev/" class="project-card" target="_blank" rel="noopener noreferrer" aria-label="Frontend Roadmaps project">
+                        <a href="https://fe-roadmaps.playgrounder.dev/"
+                           class="project-card"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           aria-label="Frontend Roadmaps project">
                             <h4 class="project-name">FE Roadmaps</h4>
                             <p class="project-description" data-i18n="project-fe-desc">
                                 Frontend development learning paths and roadmaps
@@ -211,11 +234,15 @@
                 </ul>
             </div>
 
-            <div class="category-group">
+            <div class="category-group" data-category="information">
                 <h3 class="category-title" data-i18n="category-information">Information</h3>
                 <ul class="projects-grid">
                     <li>
-                        <a href="https://k-holidays.playgrounder.dev/" class="project-card" target="_blank" rel="noopener noreferrer" aria-label="K Holidays project">
+                        <a href="https://k-holidays.playgrounder.dev/"
+                           class="project-card"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           aria-label="K Holidays project">
                             <h4 class="project-name">K Holidays</h4>
                             <p class="project-description" data-i18n="project-k-holidays-desc">
                                 View and check Korean public holidays calendar
@@ -223,7 +250,11 @@
                         </a>
                     </li>
                     <li>
-                        <a href="https://ai-article.playgrounder.dev/" class="project-card" target="_blank" rel="noopener noreferrer" aria-label="Weekly AI Article project">
+                        <a href="https://ai-article.playgrounder.dev/"
+                           class="project-card"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           aria-label="Weekly AI Article project">
                             <h4 class="project-name">Weekly AI Article</h4>
                             <p class="project-description" data-i18n="project-ai-article-desc">
                                 Weekly AI news and article digest
@@ -231,7 +262,11 @@
                         </a>
                     </li>
                     <li>
-                        <a href="https://weather.playgrounder.dev/" class="project-card" target="_blank" rel="noopener noreferrer" aria-label="Now Weather project">
+                        <a href="https://weather.playgrounder.dev/"
+                           class="project-card"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           aria-label="Now Weather project">
                             <h4 class="project-name">Now Weather</h4>
                             <p class="project-description" data-i18n="project-weather-desc">
                                 Real-time weather for your current location
@@ -239,7 +274,11 @@
                         </a>
                     </li>
                     <li>
-                        <a href="https://pangyo-pick.playgrounder.dev/" class="project-card" target="_blank" rel="noopener noreferrer" aria-label="Pangyo Pick project">
+                        <a href="https://pangyo-pick.playgrounder.dev/"
+                           class="project-card"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           aria-label="Pangyo Pick project">
                             <h4 class="project-name">판교Pick</h4>
                             <p class="project-description" data-i18n="project-pangyo-pick-desc">
                                 Roulette-based lunch and dinner spot recommendations near Pangyo Techno Valley
@@ -249,11 +288,15 @@
                 </ul>
             </div>
 
-            <div class="category-group">
+            <div class="category-group" data-category="poc">
                 <h3 class="category-title" data-i18n="category-poc">PoC</h3>
                 <ul class="projects-grid">
                     <li>
-                        <a href="https://3d-models.playgrounder.dev/" class="project-card" target="_blank" rel="noopener noreferrer" aria-label="3D Models project">
+                        <a href="https://3d-models.playgrounder.dev/"
+                           class="project-card"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           aria-label="3D Models project">
                             <h4 class="project-name">3D Models</h4>
                             <p class="project-description" data-i18n="project-3d-desc">
                                 Explore and interact with 3D models in the browser
@@ -263,11 +306,15 @@
                 </ul>
             </div>
 
-            <div class="category-group">
+            <div class="category-group" data-category="interactive">
                 <h3 class="category-title" data-i18n="category-interactive">Interactive</h3>
                 <ul class="projects-grid">
                     <li>
-                        <a href="https://iui-putyourhandsup.playgrounder.dev/" class="project-card" target="_blank" rel="noopener noreferrer" aria-label="IUI Put Your Hands Up project">
+                        <a href="https://iui-putyourhandsup.playgrounder.dev/"
+                           class="project-card"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           aria-label="IUI Put Your Hands Up project">
                             <h4 class="project-name">IUI Put Your Hands Up</h4>
                             <p class="project-description" data-i18n="project-iui-desc">
                                 Interactive UI experiment with hand gesture recognition
@@ -275,7 +322,11 @@
                         </a>
                     </li>
                     <li>
-                        <a href="https://snap-rush.playgrounder.dev/" class="project-card" target="_blank" rel="noopener noreferrer" aria-label="Snap Rush project">
+                        <a href="https://snap-rush.playgrounder.dev/"
+                           class="project-card"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           aria-label="Snap Rush project">
                             <h4 class="project-name">Snap Rush</h4>
                             <p class="project-description" data-i18n="project-snap-rush-desc">
                                 Fast-paced reflex game — catch targets and compete on the leaderboard
@@ -283,7 +334,11 @@
                         </a>
                     </li>
                     <li>
-                        <a href="https://tubeplayer.playgrounder.dev/" class="project-card" target="_blank" rel="noopener noreferrer" aria-label="Tube Player project">
+                        <a href="https://tubeplayer.playgrounder.dev/"
+                           class="project-card"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           aria-label="Tube Player project">
                             <h4 class="project-name">Tube Player</h4>
                             <p class="project-description" data-i18n="project-tubeplayer-desc">
                                 YouTube playlist player with a clean, distraction-free interface
@@ -296,13 +351,14 @@
         </section>
 
         <footer class="footer" role="contentinfo">
+            <p class="footer-copyright" data-i18n="copyright">© 2025 <a href="mailto:hellomrma@gmail.com" class="footer-email">hellomrma</a>. All rights reserved.</p>
             <div class="social-links">
                 <a href="https://github.com/hellomrma" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">GitHub</a>
                 <a href="https://www.linkedin.com/in/hellomrma/" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">LinkedIn</a>
             </div>
-            <p class="footer-copyright" data-i18n="copyright">© 2025 <a href="mailto:hellomrma@gmail.com" class="footer-email">hellomrma</a>. All rights reserved.</p>
         </footer>
     </main>
+
     <script src="i18n.js"></script>
     <script src="script.js"></script>
 </body>
