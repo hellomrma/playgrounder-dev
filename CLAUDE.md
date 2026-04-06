@@ -24,7 +24,7 @@
 
 ### 프로젝트 카테고리
 - **Educational**: C# Tutorials, FE Roadmaps
-- **Information**: K Holidays, Weekly AI Article, 판교Pick
+- **Information**: K Holidays, Weekly AI Article, Now Weather, 판교Pick
 - **PoC**: 3D Models
 - **Interactive**: IUI Put Your Hands Up, Snap Rush
 
@@ -33,6 +33,7 @@
 - https://fe-roadmaps.playgrounder.dev
 - https://k-holidays.playgrounder.dev
 - https://ai-article.playgrounder.dev
+- https://weather.playgrounder.dev
 - https://3d-models.playgrounder.dev
 - https://iui-putyourhandsup.playgrounder.dev
 - https://pangyo-pick.playgrounder.dev
