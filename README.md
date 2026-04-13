@@ -27,8 +27,13 @@
 | Educational | C# Tutorials | https://csharp-tutorials.playgrounder.dev |
 | Educational | FE Roadmaps | https://fe-roadmaps.playgrounder.dev |
 | Information | K Holidays | https://k-holidays.playgrounder.dev |
+| Information | Weekly AI Article | https://ai-article.playgrounder.dev |
+| Information | Now Weather | https://weather.playgrounder.dev |
+| Information | 판교Pick | https://pangyo-pick.playgrounder.dev |
 | PoC | 3D Models | https://3d-models.playgrounder.dev |
 | Interactive | IUI Put Your Hands Up | https://iui-putyourhandsup.playgrounder.dev |
+| Interactive | Snap Rush | https://snap-rush.playgrounder.dev |
+| Interactive | Tube Player | https://tubeplayer.playgrounder.dev |
 
 ---
 
@@ -68,4 +73,4 @@ npx serve
 
 ## 라이선스
 
-© 2025 hellomrma. All rights reserved.
+© 2026 hellomrma. All rights reserved.
