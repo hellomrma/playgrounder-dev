@@ -11,7 +11,7 @@
     <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
     <!-- Theme Color -->
-    <meta name="theme-color" content="#050508">
+    <meta name="theme-color" content="#ffffff">
 
     <!-- SEO Meta Tags -->
     <meta name="description" content="playgrounder.dev is a project where I experiment with various ideas and turn them into web services. I explore new technologies and create creative solutions.">
@@ -168,41 +168,38 @@
       }
     }
     </script>
+
+    <!-- Pretendard (single font family for the editorial system) -->
+    <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+    <link rel="stylesheet" as="style" crossorigin href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/variable/pretendardvariable-dynamic-subset.min.css">
+
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Aurora background orbs -->
-    <div class="aurora-bg" aria-hidden="true">
-        <div class="orb orb-1"></div>
-        <div class="orb orb-2"></div>
-        <div class="orb orb-3"></div>
-    </div>
-
-    <!-- Canvas particle animation -->
-    <canvas id="canvas-background"></canvas>
-
-    <!-- Cursor glow -->
-    <div class="cursor-glow" aria-hidden="true"></div>
-
     <a href="#main-content" class="skip-link">Skip to main content</a>
 
-    <nav class="header-nav" aria-label="Main navigation">
-        <button id="lang-toggle" class="lang-toggle" aria-label="Toggle language">KO</button>
-        <a href="https://resume.playgrounder.dev/" class="resume-link" target="_blank" rel="noopener noreferrer" data-i18n="about">About</a>
-    </nav>
+    <header class="site-header" role="banner">
+        <div class="site-header-inner">
+            <a href="/" class="site-logo" aria-label="playgrounder.dev home">playgrounder.dev</a>
+            <nav class="header-nav" aria-label="Main navigation">
+                <button id="lang-toggle" class="lang-toggle" aria-label="Toggle language">KO</button>
+                <a href="https://resume.playgrounder.dev/" class="nav-link" target="_blank" rel="noopener noreferrer" data-i18n="about">About</a>
+            </nav>
+        </div>
+    </header>
 
     <main id="main-content" class="container" role="main">
-        <div class="hero">
-            <h1 class="logo">playgrounder.dev</h1>
-            <p class="tagline" data-i18n="tagline">Turn Ideas into Web Services</p>
-            <p class="description" data-i18n="description">
+        <section class="hero" aria-label="Introduction">
+            <p class="kicker hero-kicker" data-i18n="tagline">Turn Ideas into Web Services</p>
+            <h1 class="hero-title">playgrounder.dev</h1>
+            <p class="hero-description" data-i18n="description">
                 A project where I experiment with various ideas and turn them into web services.<br>
                 I explore new technologies and create creative solutions.
             </p>
-        </div>
+        </section>
 
         <section class="projects-section" aria-labelledby="projects-heading">
-            <h2 id="projects-heading" class="projects-title" data-i18n="projects-title">Playground items</h2>
+            <h2 id="projects-heading" class="visually-hidden" data-i18n="projects-title">Playground items</h2>
 
             <div class="category-group" data-category="educational">
                 <h3 class="category-title" data-i18n="category-educational">Educational</h3>
@@ -360,6 +357,5 @@
     </main>
 
     <script src="i18n.js"></script>
-    <script src="script.js"></script>
 </body>
 </html>
