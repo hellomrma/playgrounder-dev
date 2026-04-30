@@ -20,6 +20,8 @@ const translations = {
         'project-pangyo-pick-desc': 'Roulette-based lunch and dinner spot recommendations near Pangyo Techno Valley',
         'project-snap-rush-desc': 'Fast-paced reflex game — catch targets and compete on the leaderboard',
         'project-tubeplayer-desc': 'YouTube playlist player with a clean, distraction-free interface',
+        'project-k-history-desc': 'Interactive 5,000-year journey through Korean history with timelines, era maps, and a people encyclopedia.',
+        'project-ds-vault-desc': 'Ready-to-use design system reference with color tokens, typography, components, and three AI-friendly Markdown templates.',
         'copyright': '© 2025 <a href="mailto:hellomrma@gmail.com" class="footer-email">hellomrma</a>. All rights reserved.'
     },
     ko: {
@@ -41,6 +43,8 @@ const translations = {
         'project-pangyo-pick-desc': '판교테크노밸리 주변 점심·회식 장소를 룰렛으로 추천하는 서비스',
         'project-snap-rush-desc': '40초 안에 타깃을 잡아 리더보드에 도전하는 반응속도 게임',
         'project-tubeplayer-desc': '깔끔하고 집중력을 방해하지 않는 인터페이스의 유튜브 플레이리스트 플레이어',
+        'project-k-history-desc': '연대기 타임라인, 시대별 지도, 인물 백과로 떠나는 한국사 5000년 인터랙티브 여행',
+        'project-ds-vault-desc': '컬러 토큰·타이포·컴포넌트 패턴을 담은 3종 템플릿의 AI 친화적 디자인 시스템 레퍼런스',
         'copyright': '© 2025 <a href="mailto:hellomrma@gmail.com" class="footer-email">hellomrma</a>. All rights reserved.'
     }
 };
