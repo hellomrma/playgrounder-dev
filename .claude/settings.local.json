@@ -6,7 +6,12 @@
       "Bash(git add:*)",
       "Bash(git commit:*)",
       "Bash(git push:*)",
-      "Bash(rtk git:*)"
+      "Bash(rtk git:*)",
+      "mcp__plugin_claude-mem_mcp-search__smart_outline",
+      "WebFetch(domain:k-history.playgrounder.dev)",
+      "WebFetch(domain:ds-vault.playgrounder.dev)",
+      "PowerShell($content = Get-Content -Path \"D:/github/playgrounder-dev/index.html\" -Raw; if \\($content -match \"K History\" -and $content -match \"DS Vault\" -and $content -match \"k-history.playgrounder.dev\" -and $content -match \"ds-vault.playgrounder.dev\" -and $content -match \"project-k-history-desc\" -and $content -match \"project-ds-vault-desc\"\\) { Write-Output \"index.html: ALL CHECKS PASSED\" } else { Write-Output \"index.html: FAIL\" }; $i18n = Get-Content -Path \"D:/github/playgrounder-dev/i18n.js\" -Raw; $enKHistory = \\([regex]::Matches\\($i18n, \"project-k-history-desc\"\\)\\).Count; $enDsVault = \\([regex]::Matches\\($i18n, \"project-ds-vault-desc\"\\)\\).Count; Write-Output \"i18n.js: project-k-history-desc occurrences = $enKHistory \\(expect 2\\)\"; Write-Output \"i18n.js: project-ds-vault-desc occurrences = $enDsVault \\(expect 2\\)\")",
+      "Bash(node -e \"const fs=require\\('fs'\\);const html=fs.readFileSync\\('D:/github/playgrounder-dev/index.html','utf8'\\);const m=html.match\\(/<script type=\\\\\"application\\\\/ld\\\\+json\\\\\">\\([\\\\s\\\\S]*?\\)<\\\\/script>/\\);if\\(!m\\){console.log\\('NO_LD'\\);process.exit\\(1\\);}try{const o=JSON.parse\\(m[1]\\);const list=o.mainEntity.itemListElement;console.log\\('JSON_OK count='+list.length\\);list.forEach\\(\\(x,i\\)=>console.log\\(i+1,x.name,'|',x.applicationCategory,'|',x.url\\)\\);}catch\\(e\\){console.log\\('JSON_ERR',e.message\\);}\")"
     ]
   }
 }
