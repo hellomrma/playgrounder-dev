@@ -19,14 +19,13 @@
 | 기능 | 파일 | 설명 |
 |------|------|------|
 | 다국어 지원 | `i18n.js` | 영어/한국어 전환, localStorage 저장 |
-| 배경 애니메이션 | `script.js` | Canvas 파티클 시스템 |
 | SEO | `index.html` | JSON-LD 구조화 데이터, 메타 태그 |
 
 ### 프로젝트 카테고리
-- **Educational**: C# Tutorials, FE Roadmaps
-- **Information**: K Holidays, Weekly AI Article, Now Weather, 판교Pick
-- **PoC**: 3D Models
-- **Interactive**: IUI Put Your Hands Up, Snap Rush
+- **Educational**: C# Tutorials, FE Roadmaps, K History
+- **Information**: K Holidays, Weekly AI Article, Now Weather, 판교Pick, DS Vault, Game Calendar
+- **PoC**: 3D Models, My Perfect Vacation
+- **Interactive**: IUI Put Your Hands Up, Tube Player
 
 ### 서브 프로젝트 URL
 - https://csharp-tutorials.playgrounder.dev
@@ -37,8 +36,11 @@
 - https://3d-models.playgrounder.dev
 - https://iui-putyourhandsup.playgrounder.dev
 - https://pangyo-pick.playgrounder.dev
-- https://snap-rush.playgrounder.dev
 - https://tubeplayer.playgrounder.dev
+- https://k-history.playgrounder.dev
+- https://ds-vault.playgrounder.dev
+- https://my-perfect-vacation.playgrounder.dev
+- https://game-calendar.playgrounder.dev
 
 ---
 
@@ -87,7 +89,6 @@
 /
 ├── index.html      # 메인 HTML (SEO 메타, JSON-LD 포함)
 ├── style.css       # 전체 스타일시트
-├── script.js       # Canvas 파티클 애니메이션
 ├── i18n.js         # 다국어 번역 시스템
 ├── README.md       # 프로젝트 설명
 ├── CLAUDE.md       # Claude Code 가이드 (현재 파일)
@@ -99,7 +100,6 @@
 |------|------|
 | `index.html` | 구조, SEO, 콘텐츠 |
 | `style.css` | 모든 스타일링 |
-| `script.js` | 배경 애니메이션만 담당 |
 | `i18n.js` | 번역 데이터 및 언어 전환 로직 |
 
 ---
@@ -159,7 +159,6 @@
 - [ ] 영어/한국어 전환 시 모든 텍스트 정상 표시
 - [ ] 모바일(768px 이하)에서 레이아웃 정상
 - [ ] 스크롤 정상 동작
-- [ ] Canvas 애니메이션 성능 이상 없음
 
 ### 테스트 방법
 ```bash
@@ -272,11 +271,10 @@ const translations = {
 ### 색상 팔레트
 | 용도 | 색상 |
 |------|------|
-| 배경 (body) | `#000000` |
-| 컨테이너 배경 | `#1a1a1a` |
-| 카드 배경 | `#0a0a0a` |
-| 테두리 | `#333333` |
-| 호버 테두리 | `#555555` |
-| 텍스트 (기본) | `#ffffff` |
-| 텍스트 (보조) | `#cccccc` |
-| 텍스트 (약한) | `#bbbbbb` |
+| 배경 (body) | `#ffffff` |
+| 표면 (footer 등) | `#fafafa` |
+| 테두리 | `#e5e5e5` |
+| 텍스트 (기본) | `#0a0a0a` |
+| 텍스트 (보조) | `#525252` |
+| 텍스트 (약한) | `#737373` |
+| 포인트 컬러 | `#1d4ed8` |

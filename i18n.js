@@ -18,11 +18,12 @@ const translations = {
         'project-ai-article-desc': 'Weekly AI news and article digest',
         'project-weather-desc': 'Real-time weather for your current location',
         'project-pangyo-pick-desc': 'Roulette-based lunch and dinner spot recommendations near Pangyo Techno Valley',
-        'project-snap-rush-desc': 'Fast-paced reflex game — catch targets and compete on the leaderboard',
         'project-tubeplayer-desc': 'YouTube playlist player with a clean, distraction-free interface',
         'project-k-history-desc': 'Interactive 5,000-year journey through Korean history with timelines, era maps, and a people encyclopedia.',
         'project-ds-vault-desc': 'Ready-to-use design system reference with color tokens, typography, components, and three AI-friendly Markdown templates.',
-        'copyright': '© 2025 <a href="mailto:hellomrma@gmail.com" class="footer-email">hellomrma</a>. All rights reserved.'
+        'project-my-perfect-vacation-desc': 'Personalized trip planner for designing your perfect vacation',
+        'project-game-calendar-desc': 'Track upcoming video game release dates on a calendar',
+        'copyright': '© 2026 <a href="mailto:hellomrma@gmail.com" class="footer-email">hellomrma</a>. All rights reserved.'
     },
     ko: {
         'about': '소개',
@@ -38,14 +39,15 @@ const translations = {
         'project-iui-desc': '손 제스처 인식을 활용한 인터랙티브 UI 실험',
         'project-fe-desc': '프론트엔드 개발 학습 경로와 로드맵',
         'project-k-holidays-desc': '한국 공휴일 캘린더 확인하기',
-        'project-ai-article-desc': '한 주치 AI 소식·아티클 요약',
+        'project-ai-article-desc': '한 주간의 AI 소식·아티클 요약',
         'project-weather-desc': '현재 위치 기준 실시간 날씨',
         'project-pangyo-pick-desc': '판교테크노밸리 주변 점심·회식 장소를 룰렛으로 추천하는 서비스',
-        'project-snap-rush-desc': '40초 안에 타깃을 잡아 리더보드에 도전하는 반응속도 게임',
         'project-tubeplayer-desc': '깔끔하고 집중력을 방해하지 않는 인터페이스의 유튜브 플레이리스트 플레이어',
         'project-k-history-desc': '연대기 타임라인, 시대별 지도, 인물 백과로 떠나는 한국사 5000년 인터랙티브 여행',
         'project-ds-vault-desc': '컬러 토큰·타이포·컴포넌트 패턴을 담은 3종 템플릿의 AI 친화적 디자인 시스템 레퍼런스',
-        'copyright': '© 2025 <a href="mailto:hellomrma@gmail.com" class="footer-email">hellomrma</a>. All rights reserved.'
+        'project-my-perfect-vacation-desc': '나만의 완벽한 휴가를 설계하는 맞춤형 여행 플래너',
+        'project-game-calendar-desc': '출시 예정 게임의 발매일을 캘린더로 한눈에 확인하기',
+        'copyright': '© 2026 <a href="mailto:hellomrma@gmail.com" class="footer-email">hellomrma</a>. All rights reserved.'
     }
 };
 
