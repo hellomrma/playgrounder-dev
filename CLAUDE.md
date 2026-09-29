@@ -22,7 +22,7 @@
 | SEO | `index.html` | JSON-LD 구조화 데이터, 메타 태그 |
 
 ### 프로젝트 카테고리
-- **Educational**: C# Tutorials, FE Roadmaps, K History
+- **Educational**: C# Tutorials, FE Roadmaps, K History, Japan Master
 - **Information**: K Holidays, Weekly AI Article, Now Weather, 판교Pick, DS Vault, Game Calendar
 - **PoC**: 3D Models, My Perfect Vacation
 - **Interactive**: IUI Put Your Hands Up, Tube Player
@@ -41,6 +41,7 @@
 - https://ds-vault.playgrounder.dev
 - https://my-perfect-vacation.playgrounder.dev
 - https://game-calendar.playgrounder.dev
+- https://japan-master.playgrounder.dev
 
 ---
 
