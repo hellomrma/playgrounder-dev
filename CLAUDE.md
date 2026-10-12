@@ -24,7 +24,7 @@
 ### 프로젝트 카테고리
 - **Educational**: C# Tutorials, FE Roadmaps, K History, Japan Master
 - **Information**: K Holidays, Weekly AI Article, Now Weather, 판교Pick, DS Vault, Game Calendar
-- **PoC**: 3D Models, My Perfect Vacation
+- **PoC**: 3D Models, My Perfect Vacation, Between
 - **Interactive**: IUI Put Your Hands Up, Tube Player
 
 ### 서브 프로젝트 URL
@@ -42,6 +42,7 @@
 - https://my-perfect-vacation.playgrounder.dev
 - https://game-calendar.playgrounder.dev
 - https://japan-master.playgrounder.dev
+- https://between.playgrounder.dev
 
 ---
 

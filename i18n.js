@@ -24,6 +24,7 @@ const translations = {
         'project-my-perfect-vacation-desc': 'Personalized trip planner for designing your perfect vacation',
         'project-game-calendar-desc': 'Track upcoming video game release dates on a calendar',
         'project-japan-master-desc': 'Learn Japanese in Korean, from kana to JLPT N1, plus culture, food, regions, and history.',
+        'project-between-desc': 'Translated messenger that lets Korean and Japanese speakers chat in their own language',
         'copyright': '© 2026 <a href="mailto:hellomrma@gmail.com" class="footer-email">hellomrma</a>. All rights reserved.'
     },
     ko: {
@@ -49,6 +50,7 @@ const translations = {
         'project-my-perfect-vacation-desc': '나만의 완벽한 휴가를 설계하는 맞춤형 여행 플래너',
         'project-game-calendar-desc': '출시 예정 게임의 발매일을 캘린더로 한눈에 확인하기',
         'project-japan-master-desc': '히라가나부터 JLPT N1까지, 일본어와 함께 문화·음식·지역·역사를 한국어로 배우는 일본 학습 가이드',
+        'project-between-desc': '말은 달라도 이야기는 이어지도록, 한국어·일본어 사용자를 잇는 번역 메신저',
         'copyright': '© 2026 <a href="mailto:hellomrma@gmail.com" class="footer-email">hellomrma</a>. All rights reserved.'
     }
 };
