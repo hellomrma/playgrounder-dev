@@ -1,0 +1,142 @@
+/* ============================================
+   playgrounder.dev — Privacy policy pages
+   앱별 개인정보처리방침(/privacy/<app-slug>/) 공통 스타일.
+   style.css의 Editorial Monochrome 토큰을 따른다.
+   ============================================ */
+
+:root {
+    --color-bg:      #ffffff;
+    --color-surface: #fafafa;
+    --color-border:  #e5e5e5;
+    --color-text:    #0a0a0a;
+    --color-muted:   #525252;
+    --color-subtle:  #737373;
+    --color-point:   #1d4ed8;
+
+    --font-sans: 'Pretendard Variable', Pretendard, -apple-system,
+                 BlinkMacSystemFont, system-ui, 'Segoe UI', sans-serif;
+
+    --transition: 200ms ease;
+}
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-sans);
+    background: var(--color-bg);
+    color: var(--color-muted);
+    letter-spacing: -0.01em;
+    line-height: 1.7;
+    word-break: keep-all;
+}
+
+a {
+    color: var(--color-text);
+    text-underline-offset: 3px;
+    transition: color var(--transition);
+}
+
+a:hover,
+a:focus-visible {
+    color: var(--color-point);
+}
+
+.skip-link {
+    position: absolute;
+    left: -9999px;
+}
+
+.skip-link:focus {
+    left: 16px;
+    top: 16px;
+    padding: 8px 12px;
+    background: var(--color-text);
+    color: var(--color-bg);
+}
+
+.policy {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 64px 24px 96px;
+}
+
+.policy-header {
+    padding-bottom: 32px;
+    border-bottom: 1px solid var(--color-text);
+}
+
+.policy-kicker {
+    font-size: 0.875rem;
+    color: var(--color-subtle);
+}
+
+.policy-title {
+    margin-top: 8px;
+    font-size: 2rem;
+    line-height: 1.3;
+    color: var(--color-text);
+}
+
+.policy-meta {
+    margin-top: 16px;
+    list-style: none;
+    font-size: 0.9375rem;
+}
+
+.policy-lang {
+    margin-top: 24px;
+    display: flex;
+    gap: 16px;
+    font-size: 0.9375rem;
+}
+
+.policy-section {
+    padding-top: 48px;
+}
+
+.policy-section + .policy-section {
+    margin-top: 48px;
+    border-top: 1px solid var(--color-border);
+}
+
+.policy-section h2 {
+    font-size: 1.5rem;
+    color: var(--color-text);
+}
+
+.policy-section h3 {
+    margin-top: 32px;
+    font-size: 1.125rem;
+    color: var(--color-text);
+}
+
+.policy-section p,
+.policy-section ul {
+    margin-top: 12px;
+}
+
+.policy-section ul {
+    padding-left: 20px;
+}
+
+.policy-footer {
+    margin-top: 64px;
+    padding-top: 24px;
+    border-top: 1px solid var(--color-border);
+    font-size: 0.875rem;
+    color: var(--color-subtle);
+}
+
+@media (max-width: 768px) {
+    .policy {
+        padding: 40px 16px 64px;
+    }
+
+    .policy-title {
+        font-size: 1.625rem;
+    }
+}

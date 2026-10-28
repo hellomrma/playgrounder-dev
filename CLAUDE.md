@@ -94,8 +94,17 @@
 ├── i18n.js         # 다국어 번역 시스템
 ├── README.md       # 프로젝트 설명
 ├── CLAUDE.md       # Claude Code 가이드 (현재 파일)
+├── privacy/        # 앱별 개인정보처리방침
+│   ├── privacy.css           # 방침 페이지 공통 스타일
+│   └── <app-slug>/index.html # 앱 하나당 한 페이지
 └── favicon.*       # 파비콘 파일들
 ```
+
+### 앱 개인정보처리방침 (`privacy/`)
+- 경로: `https://playgrounder.dev/privacy/<app-slug>/` (스토어 제출용 공개 URL)
+- 정적 HTML 한 장, `privacy/privacy.css`만 사용. `i18n.js`는 쓰지 않고 한국어 섹션(`#ko`)과 영어 섹션(`#en`)을 한 페이지에 둔다.
+- 원문은 각 앱 저장소의 문서(예: daily-japanese-app `docs/privacy-policy.md`)이며, 내용을 바꾸면 양쪽을 함께 고친다.
+- 새 앱을 추가하면 README의 '앱 개인정보처리방침' 표에도 추가한다.
 
 ### 파일별 책임
 | 파일 | 책임 |

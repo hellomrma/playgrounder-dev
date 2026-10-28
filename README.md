@@ -52,9 +52,22 @@
 ├── index.html    # 메인 HTML, SEO 메타, JSON-LD
 ├── style.css     # 스타일시트
 ├── i18n.js       # 다국어(영/한) 번역 및 전환
+├── privacy/      # 앱별 개인정보처리방침
 ├── README.md
 └── favicon.*     # 파비콘
 ```
+
+---
+
+## 앱 개인정보처리방침
+
+스토어에 제출하는 앱의 개인정보처리방침을 `/privacy/<app-slug>/`에 둡니다. 로그인 없이 열리는 공개 URL이 필요할 때 이 주소를 씁니다.
+
+| 앱 | URL |
+|----|-----|
+| 오늘 일본어 | https://playgrounder.dev/privacy/today-japanese/ |
+
+새 앱 추가: `privacy/<app-slug>/index.html`을 만들고 공통 스타일 `privacy/privacy.css`를 불러온 뒤 위 표에 추가합니다. 본문은 한국어와 영어를 함께 둡니다.
 
 ---
 
